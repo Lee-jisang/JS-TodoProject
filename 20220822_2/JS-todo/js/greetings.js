@@ -13,27 +13,6 @@
 // }
 // h2.addEventListener("click", clickEvent);
 //console.log(document.querySelectorAll(".nine-to-zero"));
-const num = document.querySelectorAll(".nine-to-zero");
-
-//console.log(document.querySelectorAll("input"));
-const input = document.querySelectorAll(".todoInput");
-
-let mode = false;
-function changeMode() {
-  mode = !mode;
-  if (mode) {
-    document.querySelector("body").style.backgroundColor = "black";
-    document.querySelector("body").style.color = "white";
-    num.forEach((element) => (element.style.color = "white"));
-    input.forEach((element) => (element.style.color = "white"));
-  } else {
-    document.querySelector("body").style.backgroundColor = "rgb(232, 229, 229)";
-    document.querySelector("body").style.color = "black";
-    num.forEach((element) => (element.style.color = "black"));
-    input.forEach((element) => (element.style.color = "black"));
-  }
-  mode ? console.log(mode) : console.log(mode);
-}
 
 const loginForm = document.querySelector("#login-form"); // document.getElementById("login-form");
 const loginInput = document.querySelector("#login-form input");
