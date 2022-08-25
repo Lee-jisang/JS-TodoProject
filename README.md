@@ -9,6 +9,8 @@
 
 > # [Demo](https://todo-for-everyone.netlify.app)
 
+![image](https://user-images.githubusercontent.com/76837780/186557424-ef0b5cd6-6c62-44c6-8e2a-1a8a9747c0db.png)
+
 - neltify를 통해 배포하였습니다.
 - 순수 바닐라JS, html, css 파일로만 사이트를 만들었다면, 따로 npm run build를 해줄 필요가 없습니다!
 - 수정할 사항이 있으면 해당 repository에 push만 해주면 neltify에서 자동으로 빌드한후 배포가 이루어집니다! 
