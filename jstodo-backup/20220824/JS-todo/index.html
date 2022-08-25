@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Momentum</title>
+  </head>
+  <body>
+    <!-- 다크모드 버튼 -->
+    <button onclick="changeMode()" id="darkMode">Dark mode</button>
+    <center>
+      <!-- 이름 입력 -->
+
+      <div>
+        <h1 id="greeting" class="hidden" onclick="nameChange()"></h1>
+      </div>
+
+      <form id="login-form" class="hidden">
+        <input
+          class="nameInput"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+      </form>
+
+      <br /><br />
+
+      <!-- 시계 -->
+      <div><h2 id="clock2"></h2></div>
+
+      <div id="root" class="g-flex-center">
+        <div>
+          <div id="h1" class="nine-to-zero number"></div>
+          <div id="h2" class="nine-to-zero number"></div>
+          <div class="line"></div>
+          <div id="m1" class="nine-to-zero number"></div>
+          <div id="m2" class="nine-to-zero number"></div>
+          <div class="line"></div>
+          <div id="s1" class="nine-to-zero number"></div>
+          <div id="s2" class="nine-to-zero number"></div>
+        </div>
+      </div>
+      <br /><br />
+
+      <!-- 명언과 저자 -->
+      <div id="quote">
+        <span class="w-100 pl-2"></span>
+        <br />
+        <span></span>
+      </div>
+      <br /><br />
+
+      <!-- 투두 리스트 -->
+      <div class="wrapper">
+        <br />
+        <h2>To Do List</h2>
+        <form id="todo-form">
+          <div>
+            <input
+              class="todoInput"
+              type="text"
+              placeholder="Write a To Do"
+              required
+              maxlength="60"
+            />
+          </div>
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <br />
+
+      <!-- 날씨 -->
+      <div id="weather">
+        <span></span>
+      </div>
+    </center>
+  </body>
+  <script src="js/greetings.js"></script>
+  <!-- <script src="js/clock.js"></script> -->
+  <script src="js/quotes.js"></script>
+  <!-- <script src="js/background.js"></script> -->
+  <script src="js/todo.js"></script>
+  <script src="js/clock-digital.js"></script>
+  <script src="js/darkmode.js"></script>
+  <!-- <script src="js/ymd.js"></script> -->
+  <!-- <script src="js/weather.js"></script> -->
+</html>

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+body {
+  background-color: rgb(232, 229, 229);
+  /* background-image: url(./img/0.jpeg); */
+}
+
+div {
+  transition: color 2s ease-in-out;
+}
+
+.active {
+  color: lawngreen;
+}
+
+.sexy-font {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.line {
+  content: "";
+  width: 3px;
+  height: 16px;
+  background: #f00;
+  display: inline-block;
+  margin: 16px; /*auto */
+}
+
+.number {
+  color: #000;
+  overflow-y: hidden;
+  height: 64px;
+  line-height: 1;
+  font-size: 64px;
+  display: inline-block;
+}
+
+.number span {
+  font-family: "Anton", sans-serif;
+  height: 64px;
+  display: block;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  text-align: center;
+}
+
+#clock2 {
+  font-family: "Anton", sans-serif;
+}
+
+/* https://velog.io/@dpdnjs402/ksy7cwux */
+.nameInput {
+  text-align: center;
+  height: 10px;
+  width: 15%;
+  border: 1px solid #e0e0e0;
+  padding: 15px; /* 내용물 작성했을 때 여백감 */
+  border-radius: 50px; /* 굴곡 주면 padding 값도 그에 상응하게 적용하는 것이 좋음 */
+  display: block;
+  margin: auto;
+
+  /* 여기부터 추가 */
+  /* 서식에 배경이미지 표현 */
+  /* background: url(images/search-solid.png) 4% no-repeat;
+  background-size: 20px; */
+}
+
+.nameInput:focus {
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-bottom: 0.625rem;
+}
+
+.todoBox {
+  padding-right: 0.5rem;
+  display: flex;
+}
+.todoListwidtControl {
+  text-align: left;
+  width: 80%;
+  font-weight: bold;
+}
+
+.wrapper {
+  border: 0.1rem solid;
+  width: 400px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding-bottom: 10px;
+}
+
+.todoInput {
+  transition: color 2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(164, 24, 24);
+  box-sizing: border-box;
+  font-family: "Arvo";
+  font-size: 18px;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  width: 310px;
+}
+
+.todoInput:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  transition: color 2s ease-in-out;
+}
+
+#greeting {
+  font-size: 40px;
+  margin: auto;
+}
+
+.transparentButton {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.transparentButton2 {
+  background-color: transparent;
+  color: green;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+}
+
+#quote {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: large;
+}
