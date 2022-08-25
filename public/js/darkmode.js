@@ -31,6 +31,7 @@ function changeMode() {
   mode = !mode;
 
   if (mode) {
+    document.querySelector("body").className = "transitionBgcolor";
     document.querySelector("#darkMode").className = "dark-mode";
     document.querySelector("body").style.backgroundColor = "black";
     document.querySelector("body").style.color = "white";
@@ -38,6 +39,7 @@ function changeMode() {
     input.forEach((element) => (element.style.color = "white"));
     localStorage.setItem("bgColor", "black");
   } else {
+    document.querySelector("body").className = "transitionBgcolor";
     document.querySelector("#darkMode").className = "original-mode";
     document.querySelector("body").style.backgroundColor = "rgb(232, 229, 229)";
     document.querySelector("body").style.color = "black";

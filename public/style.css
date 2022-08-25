@@ -2,8 +2,12 @@
 
 body {
   background-color: rgb(232, 229, 229);
-  transition: background-color 0.3s ease-in-out;
+  /* transition: background-color 0.3s ease-in-out; */
   /* background-image: url(./img/0.jpeg); */
+}
+
+.transitionBgcolor {
+  transition: background-color 0.3s ease-in-out;
 }
 
 div {
