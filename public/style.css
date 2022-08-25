@@ -2,7 +2,7 @@
 
 body {
   background-color: rgb(232, 229, 229);
-  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   /* background-image: url(./img/0.jpeg); */
 }
 
@@ -45,7 +45,7 @@ div {
   height: 64px;
   display: block;
   overflow: hidden;
-  transition: transform 0.5s ease;
+  /* //transition: transform 0.5s ease; */
   text-align: center;
 }
 
