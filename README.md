@@ -7,6 +7,7 @@
 
 ![image](https://user-images.githubusercontent.com/76837780/186300056-18c068c8-ff50-4704-a1d8-a79b156decf9.png)
 
+> # [Demo](my-first-todo.netlify.app)
 
 ## 구현한 기능
 
@@ -19,4 +20,4 @@
 ## 추가했으면 좋을것 같다는 기능
 
 - 위치 정보 날씨정보 불러와 이미지와 맵핑
-- 사이트를 이용하는 사람들끼리 할 수 있는 미니
+- 사이트를 이용하는 사람들끼리 할 수 있는 미니채팅방 
