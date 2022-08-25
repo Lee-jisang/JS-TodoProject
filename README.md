@@ -7,7 +7,7 @@
 
 ![image](https://user-images.githubusercontent.com/76837780/186300056-18c068c8-ff50-4704-a1d8-a79b156decf9.png)
 
-> # [Demo](https://my-first-todo.netlify.app/)
+> # [Demo](https://todo-for-everyone.netlify.app)
 
 - neltify를 통해 배포하였습니다.
 - 순수 바닐라JS, html, css 파일로만 사이트를 만들었다면, 따로 npm run build를 해줄 필요가 없습니다!
