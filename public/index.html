@@ -10,12 +10,14 @@
   </head>
   <body>
     <!-- 다크모드 버튼 -->
-    <button onclick="changeMode()">Dark mode</button>
+    <button onclick="changeMode()" id="darkMode">Dark mode</button>
     <center>
-      <br /><br />
-
       <!-- 이름 입력 -->
-      <h1 id="greeting" class="hidden"></h1>
+
+      <div>
+        <h1 id="greeting" class="hidden" onclick="nameChange()"></h1>
+      </div>
+
       <form id="login-form" class="hidden">
         <input
           class="nameInput"
@@ -25,12 +27,12 @@
           placeholder="What is your name?"
         />
       </form>
-      <button id="change-name" onclick="nameChange()" class="hidden">
-        change
-      </button>
+
       <br /><br />
 
       <!-- 시계 -->
+      <div><h2 id="clock2"></h2></div>
+
       <div id="root" class="g-flex-center">
         <div>
           <div id="h1" class="nine-to-zero number"></div>
@@ -45,8 +47,17 @@
       </div>
       <br /><br />
 
+      <!-- 명언과 저자 -->
+      <div id="quote">
+        <span class="w-100 pl-2"></span>
+        <br />
+        <span></span>
+      </div>
+      <br /><br />
+
       <!-- 투두 리스트 -->
       <div class="wrapper">
+        <br />
         <h2>To Do List</h2>
         <form id="todo-form">
           <div>
@@ -59,26 +70,23 @@
             />
           </div>
         </form>
-
         <ul id="todo-list"></ul>
       </div>
-    </center>
-
-    <div id="quote">
-      <span class="w-100 pl-2"></span>
       <br />
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+
+      <!-- 날씨 -->
+      <div id="weather">
+        <span></span>
+      </div>
+    </center>
   </body>
   <script src="js/greetings.js"></script>
   <!-- <script src="js/clock.js"></script> -->
   <script src="js/quotes.js"></script>
-  <script src="js/background.js"></script>
+  <!-- <script src="js/background.js"></script> -->
   <script src="js/todo.js"></script>
   <script src="js/clock-digital.js"></script>
+  <script src="js/darkmode.js"></script>
+  <!-- <script src="js/ymd.js"></script> -->
   <!-- <script src="js/weather.js"></script> -->
 </html>

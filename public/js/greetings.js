@@ -12,24 +12,12 @@
 //   clickMode ? (h2.className = "active") : (h2.className = "");
 // }
 // h2.addEventListener("click", clickEvent);
-
-let mode = false;
-function changeMode() {
-  mode = !mode;
-  if (mode) {
-    document.querySelector("body").style.backgroundColor = "black";
-    document.querySelector("body").style.color = "white";
-  } else {
-    document.querySelector("body").style.backgroundColor = "white";
-    document.querySelector("body").style.color = "black";
-  }
-  mode ? console.log(mode) : console.log(mode);
-}
+//console.log(document.querySelectorAll(".nine-to-zero"));
 
 const loginForm = document.querySelector("#login-form"); // document.getElementById("login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
-const nameChangeButton = document.querySelector("#change-name");
+
 const HIDDEN_CLASSNAME = "hidden";
 
 //유저가 이름을 입력했을때 실행
@@ -42,12 +30,17 @@ function onLoginsubmit(event) {
 }
 
 function paintGreetings(username) {
-  greeting.classList.remove(HIDDEN_CLASSNAME);
-  nameChangeButton.classList.toggle(HIDDEN_CLASSNAME);
-  greeting.innerHTML = `Hello ${username}`;
+  greeting.classList.toggle(HIDDEN_CLASSNAME);
+
+  greeting.innerHTML = `Cheers today! ${username}😊`;
 }
 
 const savedUsername = localStorage.getItem("username");
+
+function nameChange() {
+  localStorage.removeItem("username");
+  window.location.reload();
+}
 
 if (savedUsername === null) {
   //유저가 이름을 입력안했을때
@@ -60,8 +53,3 @@ if (savedUsername === null) {
 }
 
 // console.log(savedUsername);
-
-function nameChange() {
-  localStorage.removeItem("username");
-  window.location.reload();
-}

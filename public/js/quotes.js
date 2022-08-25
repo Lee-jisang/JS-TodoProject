@@ -59,5 +59,6 @@ const author = document.querySelector("#quote span:last-child");
 //quotes.length(10개면 0~9) 사이의 난수
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+quote.innerText = `"${todaysQuote.quote}"`;
+
+author.innerText = `-${todaysQuote.author}-`;

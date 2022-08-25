@@ -20,11 +20,18 @@ const m2s = document.querySelectorAll("#m2 span");
 const s1s = document.querySelectorAll("#s1 span");
 const s2s = document.querySelectorAll("#s2 span");
 
+const clock2 = document.querySelector("h2#clock2");
+
 function clock() {
   const date = new Date();
   const hor = ("0" + date.getHours()).slice(-2);
   const min = ("0" + date.getMinutes()).slice(-2);
   const sec = ("0" + date.getSeconds()).slice(-2);
+
+  const year = date.getFullYear().toString();
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const day = date.getDate().toString().padStart(2, "0");
+  clock2.innerHTML = `${year} - ${month} - ${day}`;
 
   const h1 = Number(hor[0]);
   const h2 = Number(hor[1]);
