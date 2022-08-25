@@ -9,6 +9,9 @@
 
 > # [Demo](my-first-todo.netlify.app)
 
+- neltify를 통해 배포하였습니다.
+- 순수 바닐라JS, html, css 파일로만 사이트를 만들었다면, 따로 npm build를 안해주어도 됩니다!
+
 ## 구현한 기능
 
 1. 이름 입력-greeting.js
