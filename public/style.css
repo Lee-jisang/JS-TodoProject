@@ -2,11 +2,12 @@
 
 body {
   background-color: rgb(232, 229, 229);
+  transition: color 0.3s ease-in-out;
   /* background-image: url(./img/0.jpeg); */
 }
 
 div {
-  transition: color 2s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .active {
