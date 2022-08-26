@@ -132,12 +132,14 @@ input::-webkit-input-placeholder {
 }
 
 .transparentButton {
+  cursor: pointer;
   background-color: transparent;
   border: 0;
   outline: 0;
 }
 
 .transparentButton2 {
+  cursor: pointer;
   background-color: transparent;
   color: green;
   font-size: 18px;
