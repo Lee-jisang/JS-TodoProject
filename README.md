@@ -1,4 +1,4 @@
-# 모두를 위한 투두리스트!(TodoList for everyone😀)
+# 모두를 위한 투두리스트!(Todoist for everyone😀)
 
 > 바닐라 JS로 투두리스트를 만들어 보았습니다.
 
